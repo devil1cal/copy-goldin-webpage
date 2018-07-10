@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <meta charset="utf-8" />
+  <title>Goldin</title>
+  <link href="mainpage-style.css" rel="stylesheet" type="text/css" />
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+    }
+  </script>
+</head>
+
+<body>
+
+  <section class="first-container">
+    <section class="navbar">
+      <div class="navigation">
+        <ul class="menu">
+          <li><img src="pics\mainp\navlog.jpg" /></li>
+          <li class="dropdown"><span>Collection ▾</span>
+            <ul class="dropdown-menu">
+              <li><a href="#">Goya Collection</a></li>
+              <li><a href="#">Elementi Collection</a></li>
+              <li><a href="#">Light Luce Collection</a></li>
+              <li><a href="#">Pompei Collection</a></li>
+          </li>
+          </ul>
+          <li class="btb"><a href="#">Behind The Brand</a></li>
+        </ul>
+      </div>
+      <img class="logonav" src="pics\mainp\logo.png" />
+      <div class="navinfo">
+        <div class="navph">
+          <img src="pics\mainp\e-mail.png" />
+          <img src="pics\mainp\phone.png" />
+        </div>
+        <div class="navp">
+          <p> INFO@GOLDIN.COM.TR</p>
+
+          <p>+90 212 256 20 20</p>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="first-container carousel">
+    <div class="flexslider carousel">
+      <div class="first">
+        <img src="pics\carousel1\carousel2.jpg" />
+      </div>
+      <div class="slides">
+        <img src="pics\carousel1\carousel1.jpg" />
+      </div>
+      <div class="slides">
+        <img src="pics\carousel1\Elementi-Collection\ikiside 1.jpg" />
+      </div>
+      <div class="slides">
+        <img src="pics\carousel1\Pompei-Collection\ikiside.jpg" />
+      </div>
+      <div class="slides">
+        <img src="pics\carousel1\Elementi-Collection\ikiside 2.jpg" />
+      </div>
+      <!-- Next and previous buttons
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <br>
+
+    <!-- The dots/circles -->
+      <!-- <div>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>-->
+      <!-- items mirrored twice, total of 12 -->
+
+
+    </div>
+  </section>
+
+  <section class="first-container">
+    <section class="container behindbrand">
+      <div class="title-id">
+        <h4>ABOUT</h4>
+        <img src="#" />
+      </div>
+      <div class="about-goldin">
+        <div class="aboutgoldin">
+          <div class="agcomment">
+            <h4>GOLDIN</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu risus sed ex posuere pharetra id non ligula. Suspendisse cursus, tortor at elementum euismod, velit augue aliquam dui, a mollis mi dui ut nisl. Sed vel augue non purus volutpat
+              consequat.
+            </p>
+            <a class="seemore" href="#"> See More </a>
+          </div>
+        </div>
+        <div class="aboutgoldinpic"> <img src="pics\mainp\mainpage1.jpg" /></div>
+      </div>
+    </section>
+  </section>
+
+  <section class="first-container">
+    <section class="container collection">
+      <div class="title-id">
+        <h4>COLLECTION</h4>
+        <img src="#" />
+      </div>
+      <div class="mbox">
+        <div class="frow">
+          <a href="#"><img src="pics\mainp\mpc1.png"/></a>
+          <h4>2017<h4>
+            <p>POMPEI COLLECTION</p>
+        </div>
+        <div class="secrow">
+
+          <div>
+          <a href="#"><img src="pics\mainp\mpc2.png"/></a>
+          <h4>2017<h4>
+            <p>LUCE COLLECTION</p>
+        </div>
+        <div>
+          <a href="#"><img src="pics\mainp\mpc3.png"/></a>
+          <h4>2017<h4>
+            <p>ELEGANCE COLLECTION</p>
+        </div>
+      </div>
+      <a class="seemore" href="#"> View All Catagories </a>
+      </div>
+      </div>
+    </section>
+  </section>
+
+  <section class="first-container">
+    <section class="container viewall">
+      <div class="viewallpics">
+        <div class="p1">
+          <img src="pics\mainp\viewm1.png" />
+        </div>
+        <div class="p2">
+          <img class="p21" src="pics\mainp\viewm2box.png" />
+
+        </div>
+        <div class="p3">
+          <img class="p31" src="pics\mainp\viewm3box.png" />
+          
+        </div>
+        <div class="p4">
+          <img src="pics\mainp\viewm4.png" />
+        </div>
+
+      </div>
+    </section>
+  </section>
+
+  <section class="first-container footban">
+    <section class="container footer">
+      <div class="frow1">
+            <div class="comment"><p class="commentfrow">Goldin is Amazing!</p></div>
+
+        <ul class="menu-footer">
+          <li><span class="dropdown-footer">ABOUT US</span>
+            <ul class="dropdown-menu-footer">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+          </li>
+          <li><span class="dropdown-footer">SHOPPING</span>
+            <ul class="dropdown-menu-footer">
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">Shopping Card</a></li>
+              <li><a href="#">Store</a></li>
+            </ul>
+          </li>
+          <li><span class="dropdown-footer">CONTACT</span>
+            <ul class="dropdown-menu-footer">
+            <li><a href="#">Adress</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Mail</a></li>
+          </ul>
+          </li>
+
+</div>
+          <img  class="centerbanner"src="pics\mainp\footerban.png" />
+<div class="srow1">
+          <div class="">
+
+            <p>Desing by<a href="#"><img src="pics\mainp\wiselogo.png"/></a></p>
+          </div>
+          <div>
+              <p> COPYRIGHT @ 2017 GOLDIN. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div>
+              <a href="#"><img src="pics\mainp\fblogo.png"/></a>
+              <a href="#"><img src="pics\mainp\twitlogo.png"/></a>
+          </div>
+        </div>
+    </section>
+  </section>
+
+</body>
+
+</html>

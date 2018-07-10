@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@@font-face {
+  font-family: "dosis";
+  src: url(fonts\dosis\Dosis-Light.otf);
+}
+
+body {}
+
+h1, h2, h3, h4, h5, h6 {}
+
+.first-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  max-width: 1400px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 5%;
+}
+
+/* carousell */
+
+/* Slideshow container */
+
+.flexslider img {
+  width: 100%;
+}
+
+.flexsider {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+  overflow: hidden;
+  clear: both;
+}
+
+/* Hide the images by default */
+
+.slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+
+.Prev, .Next {
+  cursor: pointer;
+  display: relative;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+}
+
+/* Position the "next button" to the right */
+
+.Next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+  text-align: center;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* carousell */
+
+.navbar {
+  display: flex;
+  max-height: 100px;
+  max-width: 1400px;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  font-family: Dosis;
+  color: #0f4d73;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 0;
+  box-shadow: 0px 4px 0px #ffffff;
+  align-items: center;
+}
+
+.mavigation {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border: 1px solid green;
+}
+
+/* navigation bar */
+
+.menu {
+  display: flex;
+  float: left;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #0f4d73;
+}
+
+.menu>li {
+  display: inline;
+  margin-right: 25px;
+}
+
+.menu>li:last-of-type {
+  margin-right: 0;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  border bottom: 1px solid #fff;
+  margin-top: 5px;
+}
+
+.dropdown-menu li:last-of-type {
+  border-bottom: none;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown>span {
+  z-index: 2;
+  position: relative;
+  cursor: pointer;
+}
+
+.btb {
+  list-style: none;
+  margin-top: 3px;
+}
+
+.menu img {
+  height: 15px;
+  width: 15px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 3px;
+}
+
+/* navigation bar */
+
+.logonav {
+  width: 145px;
+  height: 70px;
+  margin-right: 150px;
+}
+
+.navinfo {
+  display: flex;
+  margin-right: 25px;
+  text-align: left;
+  font-family: Dosis;
+  font-size: 12px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700px;
+  color: #dec881;
+  flex-direction: row;
+}
+
+.navph {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navp {
+  display: flex;
+  flex-direction: column;
+}
+
+/* first box */
+
+.behindbrand {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.title-id {
+  text-align: center;
+}
+
+.about-goldin {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.aboutgoldin {
+  width: 625px;
+  height: 347px;
+  z-index: 1;
+  flex-direction: row;
+  position: relative;
+  top: 50px;
+  left: 210px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.agcomment {
+  width: 528px;
+  height: 257px;
+  text-align: center;
+  top: 50px;
+  margin-top: 50px;
+}
+
+.aboutgoldin a {
+  text-decoration: none;
+}
+
+.aboutgoldinpic {
+  display: flex;
+  position: relative;
+  z-index: 0;
+  right: 0;
+  top: 0;
+  flex-direction: row;
+}
+
+/* second box */
+
+.collection {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.mbox {
+  display: inline-flex;
+  flex-direction: row;
+  padding: 50px;
+  width: 1200px;
+  height: 736px;
+}
+
+/* thirt box */
+
+.viewall {
+  width: 1260px;
+  height: 386px;
+}
+
+.viewallpics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  margin-top: 75px;
+  margin-bottom: 0px;
+}
+
+.p1 {
+  display: flex;
+  position: relative;
+  margin-left: 45px;
+}
+
+.p2 {
+  position: relative;
+}
+
+.p21 {
+  display: flex;
+  z-index: 0;
+  position: relative;
+}
+
+.p22 {
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  left: 100px;
+}
+
+.p3 {
+  position: relative;
+}
+
+.p31 {
+  display: flex;
+  z-index: 0;
+  position: relative;
+}
+
+.p32 {
+  z-index: 1;
+  position: absolute;
+  top: 45px;
+  left: 70px;
+}
+
+.p4 {
+  display: flex;
+  position: relative;
+  margin-right: 45px;
+}
+
+.footban {
+  background-color: #00416A;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.frow1 {
+  font-family: Dosis;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 500;
+  text-align: left;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frow1 a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+.frow1 span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.menu-footer {
+  display: flex;
+  float: left;
+  margin-right: 50px;
+}
+
+.menu-footer ul {
+  list-style-type: none;
+  margin-top: 20px;
+}
+
+.menu-footer>li {
+  display: inline;
+  margin: 50px;
+}
+
+.dropdown-menu-footer>li {
+  margin-top: 5px;
+  list-style: none;
+  margin-bottom: 7, 5px;
+}
+
+.comment {
+  display: flex;
+  border: 1px solid green;
+  margin-left: 50px;
+  margin-top: -70px;
+}
+
+.commentfrow {
+  font-size: 40px;
+  font-family: HiraMinPro;
+  font-size: normal;
+  font-stretch: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.centerbanner {
+  display: flex;
+  align-items: center;
+}
+
+.srow1 {
+  font-family: Dosis;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 500;
+  text-align: left;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 50px;
+}
+
+/* Collection main page  */
+
+.cmpbox {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.cfrow1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmf1p {
+  margin-bottom: 25px;
+}
+
+.cfrow2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.cmf2p {
+  margin-bottom: 25px;
+}
