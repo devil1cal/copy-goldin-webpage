@@ -475,3 +475,54 @@ ul {
 .cmf2p {
   margin-bottom: 25px;
 }
+/* collection-elementi  */
+.elementi{
+display: flex;
+flex-direction: column;
+
+
+border:1 solid red;
+
+
+}
+.ele{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1140px;
+  height:750px;
+  border:1px solid green;
+
+}
+
+.parags{
+  display: inline-flex;
+  width: 923px;
+  height: 339px;
+  border: 1px solid red;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  top: 75px;
+}
+.paragp{
+display: flex;
+align-items: center;
+flex-direction: column;
+font-family: Dosis;
+color: gray;
+font-size: 16px;
+font-style: normal;
+font-stretch: normal;
+font-weight: 500;
+
+
+}
+.paragpic{
+display: flex;
+width: 1140px;
+height:516px;
+border: 1px solid black;
+position: relative;
+z-index: 0;
+}
