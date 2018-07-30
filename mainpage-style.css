@@ -247,23 +247,50 @@ ul {
   display: flex;
 
 }
+/*----*/
+.seemore{
+  color:#B2B2B2;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  width: 250px;
+  height: 35px;
+  justify-content: center;
+  margin: auto;
+  font-family: "Dosis";
+  font-size: 12px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  text-align: center;
+}
+.seemore a{
+  text-decoration: none;
+  color: #B2B2B2;
+}
+
+
+
 /* first box */
 
 .behindbrand {
   display: flex;
   text-align: center;
   flex-direction: column;
+  text-decoration: none;
 }
 
-.title-id {
+
+.title-id{
   position: relative;
-  text-align: center;
+
+
 }
 .goldinmini2{
-position: relative;
-text-align: center;
-width: 25px;
-height: 30px;
+  position: relative;
+  text-align: center;
+  width: 25px;
+  height: 30px;
 
 }
 
@@ -271,11 +298,22 @@ height: 30px;
   position: absolute;
   top:50%;
   left:50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
+  color:#646464;
+  font-family: "Dosis";
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  font-weight: 700;
+  text-align: center;
+
 }
+
+
 .about-goldin {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+
 }
 
 .aboutgoldin {
@@ -288,28 +326,53 @@ height: 30px;
   left: 210px;
   background-color: #ffffff;
   text-align: center;
+
 }
 
 .agcomment {
+  display: flex;
+  flex-direction: column;
   width: 528px;
   height: 257px;
+  justify-content: center;
+  margin: 35px;
+  overflow: hidden;
+
+}
+.agcommenthead{
+
+  color:#646464;
+  margin-top: 10px;
+}
+ .agcomment h1{
+   color: #646464;
+   font-size: 48px;
+   font-weight: 400;
+   text-align: center;
+   font-family: "HiraMinPro";
+ }
+.agcomment p{
+  color:#929292;
+  margin-top:10px;
+  font-family: "Dosis";
+  font-size: 16px;
+  font-weight: 500;
   text-align: center;
-  top: 50px;
-  margin-top: 50px;
+  font-style: normal;
+  font-stretch: normal;
 }
 
-.aboutgoldin a {
-  text-decoration: none;
-}
+
 
 .aboutgoldinpic {
   display: flex;
   position: relative;
   z-index: 0;
-  right: 0;
-  top: 0;
+  left:-35px;
+  overflow: hidden;
   flex-direction: row;
 }
+
 
 /* second box */
 
@@ -317,29 +380,37 @@ height: 30px;
   display: flex;
   text-align: center;
   flex-direction: column;
-  border:1px solid red;
+
 }
 
 .mbox {
   display:flex;
   width: 1200px;
-  height: 736px;
-  border:1px solid blue;
-  flex-direction:column;
+  height: 600px;
+
+  flex-direction:row;
+  margin: 50px;
+
 }
 .frow{
   display:flex;
   width: 529px;
   height: 497px;
-  padding-left: 50px;
- border:1px solid pink;
+  margin: 25px;
+
 }
 .secrow{
 display:flex;
 flex-direction: column;
 width: 529px;
 height: 497px;
-border:1px solid green;
+
+margin: 25px;
+}
+.secrow1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 23px;
 
 }
 
@@ -362,51 +433,28 @@ border:1px solid green;
 }
 
 .p1 {
-  display: flex;
+
   position: relative;
-  margin-left: 45px;
 }
 
 .p2 {
   position: relative;
 }
 
-.p21 {
-  display: flex;
-  z-index: 0;
-  position: relative;
-}
 
-.p22 {
-  z-index: 1;
-  position: absolute;
-  top: 40px;
-  left: 100px;
-}
 
 .p3 {
   position: relative;
 }
 
-.p31 {
-  display: flex;
-  z-index: 0;
-  position: relative;
-}
 
-.p32 {
-  z-index: 1;
-  position: absolute;
-  top: 45px;
-  left: 70px;
-}
 
 .p4 {
-  display: flex;
-  position: relative;
-  margin-right: 45px;
-}
 
+  position: relative;
+
+}
+/* footer  */
 .footban {
   background-color: #00416A;
 }
@@ -418,7 +466,7 @@ border:1px solid green;
 
 
 .frow1 {
-  font-family: Dosis;
+  font-family: "Dosis";
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
@@ -465,7 +513,6 @@ border:1px solid green;
 
 .comment {
   display: flex;
-  border: 1px solid green;
   margin-left: 50px;
   margin-top: -70px;
 }
@@ -485,7 +532,7 @@ border:1px solid green;
 }
 
 .srow1 {
-  font-family: Dosis;
+  font-family: "Dosis";
   color: #ffffff;
   font-size: 16px;
   font-style: normal;
@@ -498,6 +545,13 @@ border:1px solid green;
   justify-content: space-between;
   flex-direction: row;
   margin: 50px;
+}
+.wise img{
+padding-left: 10px;
+}
+.social-logos img{
+
+  padding-right: 10px;
 }
 
 /* Collection main page  */
